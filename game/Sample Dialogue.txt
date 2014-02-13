@@ -1,0 +1,43 @@
+# start
+! bg: forest
+! char: knight
+! action: suspicious
+% (Knight) "If thou art staring at mine asse, I suggest that ye do"
+% (Knight) "stoppe."
+*
++ () "Uhh, no, I was, err... admiring your armor." > admire
++ () "Heh heh heh... that IS a nice piece of ass." > ass
++ (cha > 8) "I'm sorry. It won't happen again." > sorry
+
+# admire
+! jump: cha < 3, fail
+! action: proud
+% (Knight) "Yea, 'tis a fine suit of $armor$, crafted by the finest"
+% (Knight) "smythe in Wellhillsmintingshire. I shall regale ye with the"
+% (Knight) "tale of its creation, many years in the past, for thou hast"
+% (Knight) "taken such a strong interest!"
+! fadeout: 0, 0, 0
+% () "You spend the next three hours listening to an extremely detailed"
+% () "description of the armor's creation."
+! exit
+
+# ass
+! action: angry
+% (Knight) "I grow wearye of thine most unpleasant demeanour. Thou art a"
+% (Knight) "cur and a scoundrel, and I shall speake no more to thee"
+% (Knight) "without mine trusty sworde to thine throat. Have at thee!"
+! emote: attack
+! battle
+
+# sorry
+! action: happy
+% (Knight) "Thou art so adorable when thou art blushing."
+% (Knight) "...Forsooth, most suddenlye, I doth have the strangeste urge"
+% (Knight) "to *get into thine pants*."
+! sexscene
+
+# fail
+! action: angry
+% (Knight) "Thou art a bigge fatte liar. Speaketh no more!"
+! battle
+end

@@ -1,3 +1,4 @@
+*~
 *.py[cod]
 
 # C extensions
@@ -17,7 +18,6 @@ develop-eggs
 .installed.cfg
 lib
 lib64
-__pycache__
 
 # Installer logs
 pip-log.txt
@@ -32,5 +32,23 @@ nosetests.xml
 
 # Mr Developer
 .mr.developer.cfg
+
+# Eclipse ignores
 .project
+
+# Python ignores
+*__pycache__
+
+# PyDev ignores
 .pydevproject
+
+# Komodo IDE ignores
+.komodotools
+*.komodoproject
+
+# Ninja IDE ignores
+*.nja
+
+# Sublime Text ignores
+*.sublime-project
+*.sublime-workspace
