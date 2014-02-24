@@ -52,3 +52,7 @@ nosetests.xml
 # Sublime Text ignores
 *.sublime-project
 *.sublime-workspace
+
+# PyCharm ignores
+.idea/
+*.iml
